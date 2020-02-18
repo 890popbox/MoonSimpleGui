@@ -42,7 +42,6 @@ class Sudoku(object):
 				#y = 5 if (r+1)%3==0 else 0
 				block = Entry(main,text=str(n),width=5, font=("Calibri 14 bold"))
 				block.grid(row=r, column=c,padx = 3,pady=3)
-				block.insert(0,str(n))
 				blockRow.append(block)
 				n+=1
 			self.gameBoard.append(blockRow)		
